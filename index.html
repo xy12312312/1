@@ -1,223 +1,123 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>夕阳电竞 - LOL & 无畏契约 代练陪玩</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Microsoft YaHei", sans-serif;
-        }
-        body {
-            background-color: #1a1a1a;
-            color: #fff;
-            line-height: 1.6;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        /* 头部样式 */
-        .header {
-            background: linear-gradient(to right, #1a1a1a, #2b2121);
-            padding: 30px 20px;
-            border-radius: 12px;
-            margin-bottom: 20px;
-            text-align: center;
-            position: relative;
-        }
-        .header h1 {
-            color: #ff8c00;
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-        .header p {
-            font-size: 18px;
-            color: #ddd;
-        }
-        /* 语言切换按钮 */
-        .lang-switch {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-        .lang-btn {
-            padding: 8px 16px;
-            border: 1px solid #ff8c00;
-            border-radius: 6px;
-            background: transparent;
-            color: #fff;
-            margin-left: 10px;
-            cursor: pointer;
-        }
-        .lang-btn.active {
-            background-color: #ff4500;
-            border-color: #ff4500;
-        }
-        /* 轮播图容器 */
-        .carousel-container {
-            position: relative;
-            margin-bottom: 20px;
-        }
-        .carousel {
-            background-color: #222;
-            border-radius: 12px;
-            overflow: hidden;
-            position: relative;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .carousel img {
-            max-height: 100%;
-            max-width: 100%;
-            object-fit: contain;
-            display: none;
-        }
-        .carousel img.active {
-            display: block;
-        }
-        .carousel-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0,0,0,0.5);
-            color: white;
-            border: none;
-            font-size: 24px;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            cursor: pointer;
-            z-index: 10;
-        }
-        .prev-btn { left: 10px; }
-        .next-btn { right: 10px; }
-        .contact-btn {
-            position: absolute;
-            right: 20px;
-            bottom: 20px;
-            background-color: #ff4500;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 6px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        /* 你要放联系方式的位置 */
-        .contact-info {
-            background-color: #222;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .contact-info h3 {
-            color: #ff8c00;
-            margin-bottom: 15px;
-            font-size: 20px;
-        }
-        .contact-item {
-            font-size: 18px;
-            margin: 10px 0;
-            color: #00ccff;
-            font-weight: bold;
-        }
-        /* 服务板块样式 */
-        .service-section {
-            background-color: #222;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .service-title {
-            color: #ff8c00;
-            font-size: 24px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
-        .service-title::before {
-            content: "";
-            display: inline-block;
-            width: 6px;
-            height: 20px;
-            background-color: #ff8c00;
-            margin-right: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>夕阳电竞 - LOL国外服全业务 上王者 下棋 整队  & 瓦罗兰特（瓦罗兰特） 代练陪玩</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Microsoft YaHei", sans-serif;
+    }
+    body {
+        background-color: #1a1a1a;
+        color: #fff;
+        line-height: 1.6;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .header {
+        background: linear-gradient(to right, #1a1a1a, #2b2121);
+        padding: 30px 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .header h1 {
+        color: #ff8c00;
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    .header p {
+        font-size: 18px;
+        color: #ddd;
+    }
+    .carousel {
+        background-color: #222;
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .carousel img {
+        width: 100%;
+        max-width: 700px;
+        border-radius: 8px;
+        margin: 10px 0;
+    }
+    .contact-box {
+        background-color: #222;
+        border-radius: 12px;
+        padding: 25px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .contact-box h3 {
+        color: #ff8c00;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .contact-text {
+        font-size: 20px;
+        color: #00ccff;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    .service {
+        background-color: #222;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+    .service h2 {
+        color: #ff8c00;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .service p {
+        font-size: 16px;
+        color: #eee;
+        margin: 5px 0;
+    }
+</style>
 </head>
 <body>
-    <div class="header">
-        <h1>夕阳电竞</h1>
-        <p>英雄联盟（全服接单）& 无畏契约（瓦罗兰特，国外服都接）·代练 | 陪玩</p>
-        <div class="lang-switch">
-            <button class="lang-btn">English</button>
-            <button class="lang-btn active">中文</button>
-        </div>
-    </div>
 
-    <!-- 轮播图 -->
-    <div class="carousel-container">
-        <div class="carousel">
-            <img src="pic1.jpg" class="active" alt="战绩图1">
-            <img src="pic2.jpg" alt="战绩图2">
-            <img src="pic3.jpg" alt="战绩图3">
-            <img src="pic4.jpg" alt="战绩图4">
-            <button class="carousel-btn prev-btn">&lt;</button>
-            <button class="carousel-btn next-btn">&gt;</button>
-            <button class="contact-btn">欢迎议价</button>
-        </div>
-    </div>
+<div class="header">
+    <h1>夕阳电竞</h1>
+    <p>英雄联盟 | 无畏契约 全服代练·陪玩·纯手工·安全高效</p>
+</div>
 
-    <!-- 这里就是你箭头指向的位置！联系方式都放在这里 -->
-    <div class="contact-info">
-        <h3>联系我们</h3>
-        <div class="contact-item">DC语音：xiyanglol</div>
-        <div class="contact-item">微信：xylolwa</div>
-        <div class="contact-item">QQ：1614068308</div>
-    </div>
+<div class="carousel">
+    <img src="pic1.jpg">
+    <img src="pic2.jpg">
+    <img src="pic3.jpg">
+    <img src="pic4.jpg">
+</div>
 
-    <!-- 服务板块 -->
-    <div class="service-section">
-        <div class="service-title">英雄联盟 代练</div>
-        <div class="rank-section">
-            <h4>段位</h4>
-            <!-- 这里可以放段位列表，你需要的话我再帮你补全 -->
-        </div>
-    </div>
+<!-- 你要的联系方式 放在这里！-->
+<div class="contact-box">
+    <h3>📞 联系方式</h3>
+    <div class="contact-text">DC语音：xiyanglol</div>
+    <div class="contact-text">微信：xiyanglol666</div>
+    <div class="contact-text">QQ：123456789</div>
+</div>
 
-    <script>
-        // 轮播图自动切换
-        const images = document.querySelectorAll('.carousel img');
-        const prevBtn = document.querySelector('.prev-btn');
-        const nextBtn = document.querySelector('.next-btn');
-        let currentIndex = 0;
+<div class="service">
+    <h2>🎮 英雄联盟代练</h2>
+    <p>黑铁 → 青铜 → 白银 → 黄金 → 铂金 → 翡翠 → 钻石 → 大师 → 宗师 → 王者</p>
+    <p>纯手工代练 / 陪玩上分 / 定位赛 / 等级代练</p>
+</div>
 
-        function showImage(index) {
-            images.forEach(img => img.classList.remove('active'));
-            images[index].classList.add('active');
-        }
+<div class="service">
+    <h2>🎯 无畏契约（瓦罗兰特）代练</h2>
+    <p>全服接单：美服 / 欧服 / 亚服 / 新加坡服 / 日韩服</p>
+    <p>段位代练 / 陪玩 / 定级赛 / 等级代打</p>
+</div>
 
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            showImage(currentIndex);
-        });
-
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % images.length;
-            showImage(currentIndex);
-        });
-
-        // 自动轮播
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % images.length;
-            showImage(currentIndex);
-        }, 3000);
-    </script>
 </body>
 </html>
